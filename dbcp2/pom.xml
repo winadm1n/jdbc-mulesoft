@@ -103,7 +103,7 @@
 			<artifactId>ojdbc</artifactId>
 			<version>8</version>
 			<scope>system</scope>
-			<systemPath>C:/Users/komal.kekare/Downloads/dbcp2/dbcp2/ojdbc8.jar</systemPath>
+			<systemPath>dbcp2/ojdbc8.jar</systemPath>
 		</dependency>
 	</dependencies>
 
