@@ -3,6 +3,8 @@ name: Mule to Spring Boot Migration
 
 on:
   push:
+    branches:
+      - main
     paths:
       - 'dbcp2/**'
  
@@ -72,7 +74,7 @@ jobs:
           cd ./migrated-folder
           git add .
           git commit -m "Move files to the new folder"
-          git push origin master  # Pushes changes to the main branch
+          git push origin main  # Pushes changes to the main branch
         else
           echo " migrated-folder already exists, skipping move operation"
         fi
