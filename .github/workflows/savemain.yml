@@ -23,8 +23,11 @@ jobs:
         distribution: 'adopt'
         java-version: '17' # or any other version you need
 
-    - name: compile Spring Boot Application
+    - name: install maven
       run: | 
         sudo apt install maven -y
+
+    - name: compile Spring Boot Application
+      run: | 
         cd ./migrated-folder
         mvn compile -e -q
